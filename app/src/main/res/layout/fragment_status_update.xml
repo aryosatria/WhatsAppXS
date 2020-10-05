@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.StatusUpdateFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/lay_status"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/lay_caption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent_grey"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/dp8"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edt_status_update"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp8"
+                android:layout_marginEnd="@dimen/dp8"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:hint="@string/hint_status"
+                android:inputType="text"
+                android:maxHeight="@dimen/dp64"
+                android:minHeight="@dimen/dp64"
+                android:padding="@dimen/dp4"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dp16"
+                android:layout_marginBottom="@dimen/dp16"
+                android:src="@drawable/ic_check" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_add_photo"
+            app:layout_constraintBottom_toTopOf="@id/lay_caption"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/img_status_update"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:adjustViewBounds="true"
+            app:layout_constraintBottom_toTopOf="@id/lay_caption"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/progress_layout"
+            style="@style/ProgressLayout"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

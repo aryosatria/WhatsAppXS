@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">WhatsAppXS</string>
+
+    <!-- region title menu-->
+    <string name="menu_logout">Logout</string>
+    <string name="menu_profile">Profile</string>
+    <string name="menu_call">Call</string>
+    <!-- endregion-->
+
+    <!-- region hint EditText-->
+    <string name="hint_email">Email</string>
+    <string name="hint_name">Name</string>
+    <string name="hint_phone">Phone</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_message">Message</string>
+    <string name="hint_status">Add a caption</string>
+    <!-- endregion-->
+
+    <!-- region text button-->
+    <string name="btn_login">Login</string>
+    <string name="btn_signup">SignUp</string>
+    <string name="btn_apply">Apply</string>
+    <string name="btn_delete_account">Delete Account</string>
+    <string name="btn_send">Send</string>
+    <!-- endregion-->
+
+    <!-- region text for TextView-->
+    <string name="txt_signup"><u>No Account? Go To SignUp</u></string>
+    <string name="txt_login"><u>Already have an account? Go To Login</u></string>
+    <string name="txt_chats">Chats</string>
+    <string name="txt_status">Status</string>
+    <string name="txt_welcome">Welcome to WhatsAppClone</string>
+    <!-- endregion-->
+
+    <!-- region text content-->
+    <string name="cont_hello_status_update_fragment">Hello Status Update Fragment</string>
+    <string name="cont_hello_status_list_fragment">Hello Status fragment</string>
+    <string name="cont_hello_chats_fragment">Hello Chats fragment</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- endregion-->
+</resources>

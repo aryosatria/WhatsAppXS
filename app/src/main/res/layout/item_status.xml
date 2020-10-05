@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/dp8">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_status_photo"
+        android:layout_width="@dimen/dp64"
+        android:layout_height="@dimen/dp64"
+        android:src="@drawable/ic_user"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/dp8"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        app:layout_constraintStart_toEndOf="@id/img_status_photo">
+
+        <TextView
+            android:id="@+id/txt_status_name"
+            style="@style/TitleNameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txt_status_time"
+            style="@style/TextStandard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

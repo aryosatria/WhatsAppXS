@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LayoutTextBox"
+    android:layout_gravity="end"
+    android:gravity="end">
+
+    <TextView
+        android:id="@+id/txt_message"
+        style="@style/MessageBox"
+        android:background="@drawable/box_msg_from_me"
+        android:textColor="@android:color/black" />
+</LinearLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.aryosatria.whatsappxs">
+
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_whatsapp"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_whatsapp"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activities.StatusActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".activities.ConversationActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".activities.ContactsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".activities.ProfileActivity"
+            android:parentActivityName=".activities.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activities.SignUpActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".activities.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.MainActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+    </application>
+
+</manifest>

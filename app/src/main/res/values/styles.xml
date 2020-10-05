@@ -1,0 +1,113 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorControlNormal">@color/white</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay"
+        parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay"
+        parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="StandardButton">
+        <item name="android:layout_width">@dimen/dp300</item>
+        <item name="android:layout_height">@dimen/dp50</item>
+        <item name="android:background">@drawable/btn_standard</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/sp20</item>
+        <item name="android:layout_marginTop">@dimen/dp8</item>
+        <item name="android:layout_marginBottom">@dimen/dp8</item>
+        <item name="android:foreground">?attr/selectableItemBackground</item>
+    </style>
+
+    <style name="WarningButton" parent="StandardButton">
+        <item name="android:background">@drawable/btn_warning</item>
+    </style>
+
+    <style name="SendButton">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/sp20</item>
+        <item name="android:background">@drawable/btn_send</item>
+    </style>
+
+    <style name="StandardImageButton">
+        <item name="android:background">@drawable/btn_send</item>
+        <item name="android:foreground">?attr/selectableItemBackground</item>
+    </style>
+
+    <style name="StandardTextInput">
+        <item name="android:layout_width">@dimen/dp300</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingStart">@dimen/dp8</item>
+        <item name="android:paddingEnd">@dimen/dp8</item>
+        <item name="android:layout_marginTop">@dimen/dp8</item>
+        <item name="android:layout_marginBottom">@dimen/dp8</item>
+    </style>
+
+    <style name="Text">
+        <item name="android:textSize">@dimen/sp14</item> </style>
+
+    <style name="TextStandard">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/sp16</item>
+        <item name="android:paddingStart">@dimen/dp8</item>
+        <item name="android:paddingEnd">@dimen/dp8</item>
+    </style>
+
+    <style name="LinkText" parent="Text">
+        <item name="android:textColor">@color/blue</item>
+    </style>
+
+    <style name="TitleNameText" parent="Text">
+        <item name="android:textSize">@dimen/sp16</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingStart">@dimen/dp8</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="LayoutDefault">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item> </style>
+
+    <style name="LayoutTextBox" parent="LayoutDefault">
+        <item name="android:layout_marginStart">@dimen/dp16</item>
+        <item name="android:layout_marginEnd">@dimen/dp16</item>
+        <item name="android:layout_marginTop">@dimen/dp4</item>
+        <item name="android:layout_marginBottom">@dimen/dp4</item>
+    </style>
+
+    <style name="MessageBox">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingStart">@dimen/dp8</item>
+        <item name="android:paddingTop">@dimen/dp8</item>
+        <item name="android:paddingBottom">@dimen/dp8</item>
+        <item name="android:paddingEnd">@dimen/dp8</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:minHeight">@dimen/dp32</item>
+        <item name="android:maxWidth">@dimen/dp300</item>
+    </style>
+
+    <style name="ProgressLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/shadow_color</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:visibility">gone</item>
+    </style>
+</resources>
